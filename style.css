@@ -1,0 +1,92 @@
+body {
+    background-color: #F6D0C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: #DDBBAD;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.currency-container {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.currency-container input {
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: right;
+    color: black;
+    flex: 1;
+    min-width: 100px;
+}
+
+.exchange-rate {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+select:focus,
+input:focus {
+    outline: 0;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+input[disabled] {
+    background-color: transparent !important;
+    color: black; 
+    opacity: 1;  
+}
+
+@media (max-width: 576px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        height: 100vh;     
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .currency-container {
+        flex-direction: column; 
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .currency-container input {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .exchange-rate {
+        font-size: 14px;
+    }
+}
